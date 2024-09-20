@@ -76,7 +76,25 @@
     <script>
         //PREPARE GAME CONFIG AND VARIABLES
         //TODO: config
-       
+        //oppgave 2
+       const gameConfig = {
+        player: "Ashek",
+        energy: 5,
+        points: 10,
+        duration: 138,
+       }
+       console.log(gameConfig)
+
+       function updateplayers() {
+        document.getElementById("playerName").innerHTML = `${gameConfig.player}`
+        document.getElementById("energy").innerHTML = `${gameConfig.energy}`
+        document.getElementById("points").innerHTML = `${gameConfig.points}`
+        document.getElementById("duration").innerHTML = `${gameConfig.duration}`
+    }
+    updateplayers()
+
+        
+    
         //TODO: notebook
         
 
@@ -85,7 +103,9 @@
         //TODO: print notebook info to HTML
 
         //(BONUS) TODO: function for all prints
-        
+
     </script>
+        
+
 </body>
 </html>
